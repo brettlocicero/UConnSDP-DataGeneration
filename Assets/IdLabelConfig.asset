@@ -43,5 +43,11 @@ MonoBehaviour:
   - label: cleaning_snuggle_henkel
     id: 10
     hierarchyRelation: 0
+  - label: BentPin Large.prefab
+    id: 11
+    hierarchyRelation: 0
+  - label: BentPin Small.prefab
+    id: 12
+    hierarchyRelation: 0
   autoAssignIds: 1
   startingLabelId: 1

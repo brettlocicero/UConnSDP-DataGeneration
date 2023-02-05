@@ -33,4 +33,8 @@ MonoBehaviour:
     color: {r: 0.7168692, g: 0.20514846, b: 1, a: 1}
   - label: cleaning_snuggle_henkel
     color: {r: 1, g: 0.7643215, b: 0.36239845, a: 1}
+  - label: BentPin Small.prefab
+    color: {r: 1, g: 0.600804, b: 0.023509026, a: 1}
+  - label: BentPin Large.prefab
+    color: {r: 0.637424, g: 1, b: 0.2006818, a: 1}
   skyColor: {r: 0, g: 0, b: 0, a: 1}
