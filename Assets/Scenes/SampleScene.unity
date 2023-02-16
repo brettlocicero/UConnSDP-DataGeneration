@@ -571,11 +571,11 @@ MonoBehaviour:
   constants:
     randomSeed: 539662031
     startIteration: 0
-    iterationCount: 5
+    iterationCount: 50
     totalIterations: 100
     instanceCount: 1
     instanceIndex: 0
-  framesPerIteration: 100
+  framesPerIteration: 1
   m_ProgressPercentage: 0
   references:
     version: 2
