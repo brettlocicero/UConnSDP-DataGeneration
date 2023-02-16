@@ -49,5 +49,11 @@ MonoBehaviour:
   - label: BentPin Small.prefab
     id: 12
     hierarchyRelation: 0
+  - label: LargePin Armature Bent
+    id: 13
+    hierarchyRelation: 0
+  - label: SmallPin Armature Bent
+    id: 14
+    hierarchyRelation: 0
   autoAssignIds: 1
   startingLabelId: 1

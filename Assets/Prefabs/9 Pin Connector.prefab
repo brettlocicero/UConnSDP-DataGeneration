@@ -839,7 +839,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7092858797303494628}
-  - component: {fileID: 7092858797303494651}
   m_Layer: 0
   m_Name: 9 Pin Connector
   m_TagString: Untagged
@@ -870,35 +869,5 @@ Transform:
   - {fileID: 8941170585784727020}
   - {fileID: 1697343875194497431}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -15, z: 180}
---- !u!114 &7092858797303494651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7576521130722667870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaf9b89fbdab5e24ba6f6bb0d85f456a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  largePins:
-  - {fileID: 8766126792250218021}
-  - {fileID: 1445058594845534876}
-  - {fileID: 1510706254535061482}
-  - {fileID: 8941170585784727020}
-  - {fileID: 1697343875194497431}
-  smallPins:
-  - {fileID: 369150147189386216}
-  - {fileID: 7607510591964760330}
-  - {fileID: 7605830353000822529}
-  - {fileID: 1725627319352392248}
-  connector: {fileID: 7092858797303494628}
-  normalLargePin: {fileID: 7096762946520251997, guid: d66d9530297908e49803ce93859ea9d5, type: 3}
-  bentLargePin: {fileID: 1402219348477126000, guid: 3be8b102fb269c54c8283149a9d1f68f, type: 3}
-  normalSmallPin: {fileID: 5579491767748256401, guid: 9c3ab2d8354db5547ac92d9b87da0852, type: 3}
-  bentSmallPin: {fileID: 7617653200207203894, guid: 3870b8390265b2d43a8b8300ddd58e96, type: 3}
-  largeBentPinChance: 0.3
-  smallBentPinChance: 0.3

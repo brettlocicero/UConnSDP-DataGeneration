@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConnectorRandomizer : MonoBehaviour
+public class ConnectorRandomizer : CustomRandomizer
 {
     [SerializeField] List<Transform> largePins;
     [SerializeField] List<Transform> smallPins;
@@ -15,21 +15,27 @@ public class ConnectorRandomizer : MonoBehaviour
     [SerializeField] Transform bentSmallPin;
 
     [Header("Randomization Settings")]
-    [SerializeField] [Range(0f, 1f)] float largeBentPinChance;
-    [SerializeField] [Range(0f, 1f)] float smallBentPinChance;
+    [SerializeField] float bentPinAngleThreshold = 30f;
+    [SerializeField] Vector2 pinRotationRange;
+    [SerializeField] float bentPinPower = 5f;
     
-    void PlacePins (ref List<Transform> pinList, float bentChance, Transform bentPin, Transform normalPin) 
+    void PlacePins (ref List<Transform> pinList, Transform bentPin, Transform normalPin) 
     {
         List<Transform> resultList = new List<Transform>();
         foreach (Transform oldPin in pinList) 
         {
             // decide whether pin is bent or normal
-            float n = Random.Range(0f, 1f);
-            Transform selectedPin = (n <= bentChance) ? bentPin : normalPin;
+            float bend = Mathf.Pow(Random.Range(0f, 1f), bentPinPower);
+            float lerpedThreshhold = Mathf.Lerp(pinRotationRange.x, pinRotationRange.y, bend);
+            Transform selectedPin = (Mathf.Abs(lerpedThreshhold) >= bentPinAngleThreshold) ? bentPin : normalPin;
 
             // spawn pin in world, and set connector as parent
             Transform pin = Instantiate(selectedPin, oldPin.position, oldPin.rotation);
             pin.SetParent(connector);
+
+            // set pin rotation
+            Vector3 pinRot = new Vector3(lerpedThreshhold - 180f, lerpedThreshhold, lerpedThreshhold);
+            pin.GetChild(0).localEulerAngles = (Random.Range(0, 2) == 0) ? pinRot : -pinRot;
 
             // update resultList with new object, and clean up old object
             resultList.Add(pin);
@@ -40,18 +46,12 @@ public class ConnectorRandomizer : MonoBehaviour
         pinList = resultList;
     }
 
-    void Randomize () 
+    public override void Randomize () 
     {
         // place large pins
-        PlacePins(ref largePins, largeBentPinChance, bentLargePin, normalLargePin);
+        PlacePins(ref largePins, bentLargePin, normalLargePin);
 
         // place small pins
-        PlacePins(ref smallPins, smallBentPinChance, bentSmallPin, normalSmallPin);
-    }
-
-    void Update () 
-    {
-        //if (Input.GetKeyDown(KeyCode.Space)) 
-            Randomize();
+        PlacePins(ref smallPins, bentSmallPin, normalSmallPin);
     }
 }
