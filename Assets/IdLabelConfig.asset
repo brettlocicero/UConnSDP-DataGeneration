@@ -13,47 +13,11 @@ MonoBehaviour:
   m_Name: IdLabelConfig
   m_EditorClassIdentifier: 
   m_LabelEntries:
-  - label: candy_minipralines_lindt
+  - label: LargePin Armature Bent
     id: 1
     hierarchyRelation: 0
-  - label: cereal_cheerios_honeynut
-    id: 2
-    hierarchyRelation: 0
-  - label: drink_whippingcream_lucerne
-    id: 3
-    hierarchyRelation: 0
-  - label: lotion_essentially_nivea
-    id: 4
-    hierarchyRelation: 0
-  - label: craft_yarn_caron
-    id: 5
-    hierarchyRelation: 0
-  - label: pasta_lasagne_barilla
-    id: 6
-    hierarchyRelation: 0
-  - label: drink_greentea_itoen
-    id: 7
-    hierarchyRelation: 0
-  - label: snack_granolabar_naturevalley
-    id: 8
-    hierarchyRelation: 0
-  - label: snack_biscotti_ghiott
-    id: 9
-    hierarchyRelation: 0
-  - label: cleaning_snuggle_henkel
-    id: 10
-    hierarchyRelation: 0
-  - label: BentPin Large.prefab
-    id: 11
-    hierarchyRelation: 0
-  - label: BentPin Small.prefab
-    id: 12
-    hierarchyRelation: 0
-  - label: LargePin Armature Bent
-    id: 13
-    hierarchyRelation: 0
   - label: SmallPin Armature Bent
-    id: 14
+    id: 2
     hierarchyRelation: 0
   autoAssignIds: 1
   startingLabelId: 1

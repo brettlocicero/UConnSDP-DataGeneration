@@ -13,30 +13,6 @@ MonoBehaviour:
   m_Name: SemanticSegmentationLabelConfig
   m_EditorClassIdentifier: 
   m_LabelEntries:
-  - label: drink_whippingcream_lucerne
-    color: {r: 0, g: 0, b: 1, a: 1}
-  - label: lotion_essentially_nivea
-    color: {r: 0, g: 1, b: 0, a: 1}
-  - label: craft_yarn_caron
-    color: {r: 1, g: 0, b: 0, a: 1}
-  - label: cereal_cheerios_honeynut
-    color: {r: 1, g: 1, b: 1, a: 1}
-  - label: candy_minipralines_lindt
-    color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - label: pasta_lasagne_barilla
-    color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  - label: drink_greentea_itoen
-    color: {r: 1, g: 0.4279449, b: 0.38304454, a: 1}
-  - label: snack_granolabar_naturevalley
-    color: {r: 0.00918287, g: 1, b: 0.1460529, a: 1}
-  - label: snack_biscotti_ghiott
-    color: {r: 0.7168692, g: 0.20514846, b: 1, a: 1}
-  - label: cleaning_snuggle_henkel
-    color: {r: 1, g: 0.7643215, b: 0.36239845, a: 1}
-  - label: BentPin Small.prefab
-    color: {r: 1, g: 0.600804, b: 0.023509026, a: 1}
-  - label: BentPin Large.prefab
-    color: {r: 0.637424, g: 1, b: 0.2006818, a: 1}
   - label: LargePin Armature Bent
     color: {r: 0.27201283, g: 1, b: 0.84160745, a: 1}
   - label: SmallPin Armature Bent
