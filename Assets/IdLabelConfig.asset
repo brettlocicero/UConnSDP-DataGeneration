@@ -19,5 +19,32 @@ MonoBehaviour:
   - label: SmallPin Armature Bent
     id: 2
     hierarchyRelation: 0
+  - label: LargePin Armature Bent - 2
+    id: 3
+    hierarchyRelation: 0
+  - label: SmallPin Armature Bent - 0
+    id: 4
+    hierarchyRelation: 0
+  - label: LargePin Armature Bent - 4
+    id: 5
+    hierarchyRelation: 0
+  - label: LargePin Armature Bent - 1
+    id: 6
+    hierarchyRelation: 0
+  - label: SmallPin Armature Bent - 3
+    id: 7
+    hierarchyRelation: 0
+  - label: SmallPin Armature Bent - 1
+    id: 8
+    hierarchyRelation: 0
+  - label: SmallPin Armature Bent - 2
+    id: 9
+    hierarchyRelation: 0
+  - label: LargePin Armature Bent - 0
+    id: 10
+    hierarchyRelation: 0
+  - label: LargePin Armature Bent - 3
+    id: 11
+    hierarchyRelation: 0
   autoAssignIds: 1
   startingLabelId: 1

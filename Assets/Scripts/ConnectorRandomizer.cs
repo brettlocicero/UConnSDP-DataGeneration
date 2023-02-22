@@ -10,24 +10,25 @@ public class ConnectorRandomizer : CustomRandomizer
     [Header("References")]
     [SerializeField] Transform connector;
     [SerializeField] Transform normalLargePin;
-    [SerializeField] Transform bentLargePin;
+    [SerializeField] Transform[] bentLargePins;
     [SerializeField] Transform normalSmallPin;
-    [SerializeField] Transform bentSmallPin;
+    [SerializeField] Transform[] bentSmallPins;
 
     [Header("Randomization Settings")]
     [SerializeField] float bentPinAngleThreshold = 30f;
     [SerializeField] Vector2 pinRotationRange;
     [SerializeField] float bentPinPower = 5f;
     
-    void PlacePins (ref List<Transform> pinList, Transform bentPin, Transform normalPin) 
+    void PlacePins (ref List<Transform> pinList, Transform[] bentPin, Transform normalPin) 
     {
         List<Transform> resultList = new List<Transform>();
+        int i = 0;
         foreach (Transform oldPin in pinList) 
         {
             // decide whether pin is bent or normal
             float bend = Mathf.Pow(Random.Range(0f, 1f), bentPinPower);
             float lerpedThreshhold = Mathf.Lerp(pinRotationRange.x, pinRotationRange.y, bend);
-            Transform selectedPin = (Mathf.Abs(lerpedThreshhold) >= bentPinAngleThreshold) ? bentPin : normalPin;
+            Transform selectedPin = (Mathf.Abs(lerpedThreshhold) >= bentPinAngleThreshold) ? bentPin[i] : normalPin;
 
             // spawn pin in world, and set connector as parent
             Transform pin = Instantiate(selectedPin, oldPin.position, oldPin.rotation);
@@ -40,6 +41,8 @@ public class ConnectorRandomizer : CustomRandomizer
             // update resultList with new object, and clean up old object
             resultList.Add(pin);
             Destroy(oldPin.gameObject);
+
+            i++;
         }
 
         // set pinList to contain new objects
@@ -49,9 +52,9 @@ public class ConnectorRandomizer : CustomRandomizer
     public override void Randomize () 
     {
         // place large pins
-        PlacePins(ref largePins, bentLargePin, normalLargePin);
+        PlacePins(ref largePins, bentLargePins, normalLargePin);
 
         // place small pins
-        PlacePins(ref smallPins, bentSmallPin, normalSmallPin);
+        PlacePins(ref smallPins, bentSmallPins, normalSmallPin);
     }
 }

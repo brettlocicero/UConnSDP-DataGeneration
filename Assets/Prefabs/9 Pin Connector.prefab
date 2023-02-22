@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8759618353627569931}
   - component: {fileID: 2986419120648027117}
   m_Layer: 0
-  m_Name: NormalPin Large
+  m_Name: NormalPin Large 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2419219691224492315}
   - component: {fileID: 493171540258816454}
   m_Layer: 0
-  m_Name: NormalPin Large
+  m_Name: NormalPin Large 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 2133884871888158802}
   - component: {fileID: 707052917629466547}
   m_Layer: 0
-  m_Name: NormalPin Small
+  m_Name: NormalPin Small 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 7697757419106082944}
   - component: {fileID: 5280067800644516009}
   m_Layer: 0
-  m_Name: NormalPin Small
+  m_Name: NormalPin Small 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 1251068502764212451}
   - component: {fileID: 8009641780503437872}
   m_Layer: 0
-  m_Name: NormalPin Large
+  m_Name: NormalPin Large 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 6168336463440734820}
   - component: {fileID: 6033721294380087578}
   m_Layer: 0
-  m_Name: NormalPin Small
+  m_Name: NormalPin Small 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -510,7 +510,7 @@ GameObject:
   - component: {fileID: 7742624068031180601}
   - component: {fileID: 2134343121991183904}
   m_Layer: 0
-  m_Name: NormalPin Large
+  m_Name: NormalPin Large 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -676,7 +676,7 @@ GameObject:
   - component: {fileID: 6652208537894868818}
   - component: {fileID: 5968856134882085083}
   m_Layer: 0
-  m_Name: NormalPin Large
+  m_Name: NormalPin Large 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 3637351117179553475}
   - component: {fileID: 2092103827718698494}
   m_Layer: 0
-  m_Name: NormalPin Small
+  m_Name: NormalPin Small 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -869,5 +869,5 @@ Transform:
   - {fileID: 8941170585784727020}
   - {fileID: 1697343875194497431}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -15, z: 180}

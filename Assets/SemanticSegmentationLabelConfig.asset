@@ -17,4 +17,22 @@ MonoBehaviour:
     color: {r: 0.27201283, g: 1, b: 0.84160745, a: 1}
   - label: SmallPin Armature Bent
     color: {r: 0.5923512, g: 0.05430305, b: 1, a: 1}
+  - label: SmallPin Armature Bent - 0
+    color: {r: 0, g: 0, b: 1, a: 1}
+  - label: SmallPin Armature Bent - 1
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - label: SmallPin Armature Bent - 2
+    color: {r: 1, g: 0, b: 0, a: 1}
+  - label: SmallPin Armature Bent - 3
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - label: LargePin Armature Bent - 0
+    color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - label: LargePin Armature Bent - 1
+    color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  - label: LargePin Armature Bent - 2
+    color: {r: 0.30013654, g: 0.25931942, b: 1, a: 1}
+  - label: LargePin Armature Bent - 3
+    color: {r: 0.96635294, g: 0.043642282, b: 1, a: 1}
+  - label: LargePin Armature Bent - 4
+    color: {r: 0.2943282, g: 1, b: 0.5287147, a: 1}
   skyColor: {r: 0, g: 0, b: 0, a: 1}

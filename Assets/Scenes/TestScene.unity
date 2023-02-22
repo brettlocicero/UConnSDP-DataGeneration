@@ -180,9 +180,18 @@ MonoBehaviour:
   - {fileID: 416699456}
   connector: {fileID: 416699455}
   normalLargePin: {fileID: 7735548346900939312, guid: 2cee73fe80c111a44b14ea3560834778, type: 3}
-  bentLargePin: {fileID: 5415735189734550721, guid: a3ac201d74162a54394f6b1b7a973fc4, type: 3}
+  bentLargePins:
+  - {fileID: 5415735189734550721, guid: cc652e6dc70ff490eb428398f7cdc3a7, type: 3}
+  - {fileID: 5415735189734550721, guid: 17e6713ea575e4fe89390d0d6a3b0b88, type: 3}
+  - {fileID: 5415735189734550721, guid: 92c4b355d4bef4560b977e30011abebd, type: 3}
+  - {fileID: 5415735189734550721, guid: 3d05b8be320bb478399568edc9d992b2, type: 3}
+  - {fileID: 5415735189734550721, guid: 34f7f65df17644cdcb9c6a1292bdb4e0, type: 3}
   normalSmallPin: {fileID: 1588962592197899718, guid: 668e425812663c24e93c98771946eaf5, type: 3}
-  bentSmallPin: {fileID: 1029091554317984520, guid: 2963b349b23a33b4d988629ac28fd52b, type: 3}
+  bentSmallPins:
+  - {fileID: 1029091554317984520, guid: b3dc4d6c7d47a40ad9be2137059611fd, type: 3}
+  - {fileID: 1029091554317984520, guid: 5894b0c741eea423d9ee7c8b1d9597de, type: 3}
+  - {fileID: 1029091554317984520, guid: 5c506d427b63443709e1e31d22cdc3bd, type: 3}
+  - {fileID: 1029091554317984520, guid: 08e1d2017482c47acbe1cfea5e41c560, type: 3}
   bentPinAngleThreshold: 10
   pinRotationRange: {x: 0, y: 25}
   bentPinPower: 5
@@ -468,7 +477,7 @@ MonoBehaviour:
     - rid: 3385196390648643592
       type: {class: BoundingBox2DLabeler, ns: UnityEngine.Perception.GroundTruth.Labelers, asm: Unity.Perception.Runtime}
       data:
-        enabled: 1
+        enabled: 0
         annotationId: bounding box
         idLabelConfig: {fileID: 11400000, guid: 96a83ae5078b0a94fae52782eb40d221, type: 2}
     - rid: 3385196390648643593
