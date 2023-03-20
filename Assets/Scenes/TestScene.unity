@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2064.055, g: 2195.6292, b: 2950.4924, a: 1}
+  m_IndirectSpecularColor: {r: 1662.1506, g: 1846.4397, b: 2570.0627, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -547,9 +547,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 2500
-  field of view: 64.2
+  field of view: 25
   orthographic: 0
-  orthographic size: 2
+  orthographic size: 15.4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -573,7 +573,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284450519}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 2.5, z: 34.22}
+  m_LocalPosition: {x: 0, y: 2.5, z: 82.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -651,10 +651,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2427584271394608447, guid: b978e13b00c2628458d67ff35706c08c, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: c530252c7345898478bbb019e1a5a3b3, type: 2}
     - target: {fileID: 7092858797303494628, guid: b978e13b00c2628458d67ff35706c08c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -912,7 +908,7 @@ MonoBehaviour:
       rangeCompressionFactor: 1
     influence:
       m_Shape: 0
-      m_BoxSize: {x: 150, y: 150, z: 150}
+      m_BoxSize: {x: 1000, y: 150, z: 1000}
       m_BoxBlendDistancePositive: {x: 0.5, y: 0.5, z: 0.5}
       m_BoxBlendDistanceNegative: {x: 0.5, y: 0.5, z: 0.5}
       m_BoxBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
@@ -1304,7 +1300,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 150, y: 150, z: 150}
+  m_BoxSize: {x: 1000, y: 150, z: 1000}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
@@ -1383,7 +1379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 416699455}
   camTransform: {fileID: 284450525}
-  cameraDistanceRange: {x: 20, y: 50}
+  cameraDistanceRange: {x: 50, y: 85}
   cameraJiggleRange: {x: 0, y: 0}
   cameraArcRange: {x: -45, y: 45}
 --- !u!1 &1378445007
@@ -1436,12 +1432,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomizeEveryFrame: 0
-  customRandomizers:
-  - {fileID: 96976582}
-  - {fileID: 780853092}
-  - {fileID: 31636046}
-  - {fileID: 1484506605}
-  - {fileID: 1395296343}
+  randomizers:
+  - enabled: 1
+    customRandomizer: {fileID: 96976582}
+  - enabled: 1
+    customRandomizer: {fileID: 780853092}
+  - enabled: 0
+    customRandomizer: {fileID: 31636046}
+  - enabled: 0
+    customRandomizer: {fileID: 1484506605}
+  - enabled: 1
+    customRandomizer: {fileID: 1395296343}
 --- !u!1 &1395296341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,14 +1957,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475951871}
-  m_LocalRotation: {x: 0.26495194, y: -0.7142709, z: 0.54807925, w: 0.34529215}
+  m_LocalRotation: {x: 0.13994314, y: -0.859889, z: 0.35617766, w: 0.33785263}
   m_LocalPosition: {x: 0, y: 50, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 75, y: -128.4, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: -137.1, z: 0}
 --- !u!1 &1484506603
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Randomizers : MonoBehaviour
 {
     [SerializeField] bool randomizeEveryFrame = false;
-    [SerializeField] CustomRandomizer[] customRandomizers;
+    [SerializeField] RandomizerContainer[] randomizers;
 
     void Update ()
     {
@@ -23,7 +23,15 @@ public class Randomizers : MonoBehaviour
 
     void CallRandomizers ()
     {
-        foreach (CustomRandomizer randomizer in customRandomizers)
-            randomizer.Randomize();
+        foreach (RandomizerContainer container in randomizers)
+            if (container.enabled) 
+                container.customRandomizer.Randomize();
     }
+}
+
+[System.Serializable]
+struct RandomizerContainer
+{
+    public bool enabled;
+    public CustomRandomizer customRandomizer;
 }
