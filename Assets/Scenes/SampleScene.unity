@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2105.1038, g: 2122.2034, b: 2985.4768, a: 1}
+  m_IndirectSpecularColor: {r: 1975.9885, g: 1870.3889, b: 2213.008, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 601455209}
   camTransform: {fileID: 963194228}
-  cameraDistanceRange: {x: 20, y: 50}
+  cameraDistanceRange: {x: 50, y: 85}
   cameraJiggleRange: {x: 0, y: 0}
   cameraArcRange: {x: -45, y: 45}
 --- !u!4 &16505494
@@ -760,7 +760,7 @@ MonoBehaviour:
   constants:
     randomSeed: 539662031
     startIteration: 0
-    iterationCount: 250
+    iterationCount: 5000
     totalIterations: 100
     instanceCount: 1
     instanceIndex: 0
@@ -831,7 +831,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 2500
-  field of view: 64.2
+  field of view: 25
   orthographic: 0
   orthographic size: 2
   m_Depth: -1
@@ -857,7 +857,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 2.5, z: 34.22}
+  m_LocalPosition: {x: 0, y: 2.5, z: 75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1237,12 +1237,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomizeEveryFrame: 1
-  customRandomizers:
-  - {fileID: 1501189213}
-  - {fileID: 16505493}
-  - {fileID: 471847170}
-  - {fileID: 589180299}
-  - {fileID: 1314294308}
+  randomizers:
+  - enabled: 1
+    customRandomizer: {fileID: 1501189213}
+  - enabled: 0
+    customRandomizer: {fileID: 16505493}
+  - enabled: 1
+    customRandomizer: {fileID: 471847170}
+  - enabled: 1
+    customRandomizer: {fileID: 589180299}
+  - enabled: 1
+    customRandomizer: {fileID: 1314294308}
 --- !u!4 &1306563504
 Transform:
   m_ObjectHideFlags: 0
