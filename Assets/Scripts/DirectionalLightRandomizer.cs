@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Perception.Randomization.Parameters;
 
 public class DirectionalLightRandomizer : CustomRandomizer
 {
@@ -28,18 +29,18 @@ public class DirectionalLightRandomizer : CustomRandomizer
 [System.Serializable]
 struct ColorRange
 {
-    [SerializeField] [Range(0f, 1f)] float possibleRed;
-    [SerializeField] [Range(0f, 1f)] float possibleGreen;
-    [SerializeField] [Range(0f, 1f)] float possibleBlue;
-    [SerializeField] bool grayscale;
+    [SerializeField] Vector2 hueRange;
+    [SerializeField] Vector2 saturationRange;
+    [SerializeField] Vector2 valueRange;
 
     public Color GenerateColor ()
     {
-        float r = Random.Range(0f, possibleRed);
-        float g = Random.Range(0f, possibleGreen);
-        float b = Random.Range(0f, possibleBlue);
-        float avgColor = (r + g + b) / 3f;
+        float hue = Random.Range(hueRange.x, hueRange.y);
+        float saturation = Random.Range(saturationRange.x, saturationRange.y);
+        float value = Random.Range(valueRange.x, valueRange.y);
 
-        return (grayscale) ? new Color(avgColor, avgColor, avgColor) : new Color(r, g, b);
+        Color hsvColor = Color.HSVToRGB(hue, saturation, value);
+
+        return hsvColor;
     }
 }

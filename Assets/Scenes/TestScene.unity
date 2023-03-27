@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1663.4163, g: 1848.6095, b: 2574.7307, a: 1}
+  m_IndirectSpecularColor: {r: 1662.2249, g: 1846.4631, b: 2569.969, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -172,10 +172,9 @@ MonoBehaviour:
   yAxisRotationRange: {x: 0, y: 360}
   useRandomColors: 1
   colorRanges:
-    possibleRed: 1
-    possibleGreen: 1
-    possibleBlue: 1
-    grayscale: 0
+    hueRange: {x: 0, y: 1}
+    saturationRange: {x: 0, y: 1}
+    valueRange: {x: 0, y: 1}
 --- !u!1 &96976580
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,14 +231,23 @@ MonoBehaviour:
   - {fileID: 416699457}
   - {fileID: 416699456}
   connector: {fileID: 416699455}
-  normalLargePin: {fileID: 7735548346900939312, guid: 2cee73fe80c111a44b14ea3560834778, type: 3}
+  normalLargePins:
+  - {fileID: 5415735189734550721, guid: ae6a6f3a6baad51419205fbb7bf3574f, type: 3}
+  - {fileID: 5415735189734550721, guid: 9a37791e20c8ff04da3c9144916e4b4b, type: 3}
+  - {fileID: 5415735189734550721, guid: ee70b13f5e9e61b45a49293fb6ad1afa, type: 3}
+  - {fileID: 5415735189734550721, guid: 2864d4824ac70114c9d3629753d7d22d, type: 3}
+  - {fileID: 5415735189734550721, guid: 6ba726b282cb5d04885da713f0eb47b6, type: 3}
   bentLargePins:
   - {fileID: 5415735189734550721, guid: cc652e6dc70ff490eb428398f7cdc3a7, type: 3}
   - {fileID: 5415735189734550721, guid: 17e6713ea575e4fe89390d0d6a3b0b88, type: 3}
   - {fileID: 5415735189734550721, guid: 92c4b355d4bef4560b977e30011abebd, type: 3}
   - {fileID: 5415735189734550721, guid: 3d05b8be320bb478399568edc9d992b2, type: 3}
   - {fileID: 5415735189734550721, guid: 34f7f65df17644cdcb9c6a1292bdb4e0, type: 3}
-  normalSmallPin: {fileID: 1588962592197899718, guid: 668e425812663c24e93c98771946eaf5, type: 3}
+  normalSmallPins:
+  - {fileID: 1029091554317984520, guid: 94671545c8fa7224181459f13a432c9c, type: 3}
+  - {fileID: 1029091554317984520, guid: 26b7e2fb7bd4a2a448d7bbec8523aafa, type: 3}
+  - {fileID: 1029091554317984520, guid: 16c59d788f0fb2c42bc9504d52167229, type: 3}
+  - {fileID: 1029091554317984520, guid: 397685a49cae67048aef06d115496d49, type: 3}
   bentSmallPins:
   - {fileID: 1029091554317984520, guid: b3dc4d6c7d47a40ad9be2137059611fd, type: 3}
   - {fileID: 1029091554317984520, guid: 5894b0c741eea423d9ee7c8b1d9597de, type: 3}
@@ -248,6 +256,7 @@ MonoBehaviour:
   bentPinAngleThreshold: 5
   pinRotationRange: {x: 0, y: 15}
   bentPinPower: 5
+  connectorRotationRange: {x: 0, y: 360}
 --- !u!1 &284450519
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +582,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284450519}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 2.5, z: 60}
+  m_LocalPosition: {x: 0, y: 0, z: 9.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -853,7 +862,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596445801}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8956261, y: -20.5, z: 14.958834}
+  m_LocalPosition: {x: -1.8956261, y: -8.62, z: 14.958834}
   m_LocalScale: {x: 2500, y: 1, z: 2500}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1379,7 +1388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 416699455}
   camTransform: {fileID: 284450525}
-  cameraDistanceRange: {x: 50, y: 85}
+  cameraDistanceRange: {x: 10, y: 25}
   cameraJiggleRange: {x: 0, y: 0}
   cameraArcRange: {x: -20, y: 20}
 --- !u!1 &1378445007
@@ -1437,7 +1446,7 @@ MonoBehaviour:
     customRandomizer: {fileID: 96976582}
   - enabled: 1
     customRandomizer: {fileID: 780853092}
-  - enabled: 0
+  - enabled: 1
     customRandomizer: {fileID: 31636046}
   - enabled: 0
     customRandomizer: {fileID: 1484506605}
@@ -1490,11 +1499,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reflectionQuad: {fileID: 1518960638}
   target: {fileID: 416699455}
-  possibleDistance: {x: 15, y: 50}
-  xScaleRange: {x: 10, y: 40}
-  yScaleRange: {x: 10, y: 40}
-  xPosRange: {x: -15, y: 15}
-  yPosRange: {x: -15, y: 15}
+  possibleDistance: {x: 1.5, y: 5}
+  xScaleRange: {x: 1, y: 4}
+  yScaleRange: {x: 1, y: 4}
+  xPosRange: {x: -1.5, y: 1.5}
+  yPosRange: {x: -1.5, y: 1.5}
   generatedTexture: {fileID: 0}
   seed: 0
   width: 128
@@ -1816,8 +1825,8 @@ MonoBehaviour:
   m_MaxDepthBias: 0.001
   m_ShadowResolution:
     m_Override: 512
-    m_UseOverride: 1
-    m_Level: 0
+    m_UseOverride: 0
+    m_Level: 3
   m_ShadowDimmer: 1
   m_VolumetricShadowDimmer: 1
   m_ShadowFadeDistance: 10000

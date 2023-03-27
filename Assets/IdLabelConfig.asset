@@ -13,38 +13,32 @@ MonoBehaviour:
   m_Name: IdLabelConfig
   m_EditorClassIdentifier: 
   m_LabelEntries:
-  - label: LargePin Armature Bent
+  - label: LargePin Armature Bent - 0
     id: 1
     hierarchyRelation: 0
-  - label: SmallPin Armature Bent
+  - label: LargePin Armature Bent - 2
     id: 2
     hierarchyRelation: 0
-  - label: LargePin Armature Bent - 2
+  - label: SmallPin Armature Bent - 0
     id: 3
     hierarchyRelation: 0
-  - label: SmallPin Armature Bent - 0
+  - label: LargePin Armature Bent - 4
     id: 4
     hierarchyRelation: 0
-  - label: LargePin Armature Bent - 4
+  - label: LargePin Armature Bent - 1
     id: 5
     hierarchyRelation: 0
-  - label: LargePin Armature Bent - 1
+  - label: SmallPin Armature Bent - 3
     id: 6
     hierarchyRelation: 0
-  - label: SmallPin Armature Bent - 3
+  - label: SmallPin Armature Bent - 1
     id: 7
     hierarchyRelation: 0
-  - label: SmallPin Armature Bent - 1
+  - label: SmallPin Armature Bent - 2
     id: 8
     hierarchyRelation: 0
-  - label: SmallPin Armature Bent - 2
-    id: 9
-    hierarchyRelation: 0
-  - label: LargePin Armature Bent - 0
-    id: 10
-    hierarchyRelation: 0
   - label: LargePin Armature Bent - 3
-    id: 11
+    id: 9
     hierarchyRelation: 0
   autoAssignIds: 1
   startingLabelId: 1

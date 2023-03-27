@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DefaultSettingsVolumeProfile
   m_EditorClassIdentifier: 
   components:
-  - {fileID: 7686318427622180703}
+  - {fileID: 8104350646225070093}
   - {fileID: 7502528774814404555}
   - {fileID: 7542669330009093999}
   - {fileID: 1501199423866068322}
@@ -521,7 +521,7 @@ MonoBehaviour:
   maxNits:
     m_OverrideState: 0
     m_Value: 1000
---- !u!114 &7686318427622180703
+--- !u!114 &8104350646225070093
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -535,17 +535,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   maxShadowDistance:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 500
   directionalTransmissionMultiplier:
     m_OverrideState: 0
     m_Value: 1
   cascadeShadowSplitCount:
     m_OverrideState: 0
-    m_Value: 4
+    m_Value: 2
   cascadeShadowSplit0:
     m_OverrideState: 0
-    m_Value: 0.05
+    m_Value: 0
   cascadeShadowSplit1:
     m_OverrideState: 0
     m_Value: 0.15
@@ -557,7 +557,7 @@ MonoBehaviour:
     m_Value: 0
   cascadeShadowBorder1:
     m_OverrideState: 1
-    m_Value: 0.49599993
+    m_Value: 0
   cascadeShadowBorder2:
     m_OverrideState: 0
     m_Value: 0
