@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1558.971, g: 1625.346, b: 1876.9768, a: 1}
+  m_IndirectSpecularColor: {r: 1662.2717, g: 1846.4983, b: 2569.9768, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -131,25 +131,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 779454449146732424, guid: f0fa7210acd901b4490b72eb49cfdb73, type: 3}
-      propertyPath: randomizeEveryFrame
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 779454449146732424, guid: f0fa7210acd901b4490b72eb49cfdb73, type: 3}
-      propertyPath: randomizers.Array.data[3].enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1800302601361807548, guid: f0fa7210acd901b4490b72eb49cfdb73, type: 3}
       propertyPath: m_Name
       value: Randomizers Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 3858204328009957515, guid: f0fa7210acd901b4490b72eb49cfdb73, type: 3}
-      propertyPath: colorRanges.valueRange.x
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3858204328009957515, guid: f0fa7210acd901b4490b72eb49cfdb73, type: 3}
-      propertyPath: colorRanges.saturationRange.y
-      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 4944050235812365711, guid: f0fa7210acd901b4490b72eb49cfdb73, type: 3}
       propertyPath: m_RootOrder
