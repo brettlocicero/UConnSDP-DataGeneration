@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1662.2717, g: 1846.4983, b: 2569.9768, a: 1}
+  m_IndirectSpecularColor: {r: 1558.9553, g: 1625.346, b: 1876.9885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -828,6 +828,10 @@ PrefabInstance:
     - target: {fileID: 1800302601361807548, guid: f0fa7210acd901b4490b72eb49cfdb73, type: 3}
       propertyPath: m_Name
       value: Randomizers Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 3360642796701293730, guid: f0fa7210acd901b4490b72eb49cfdb73, type: 3}
+      propertyPath: managedReferences[3385196390648643592].enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4944050235812365711, guid: f0fa7210acd901b4490b72eb49cfdb73, type: 3}
       propertyPath: m_RootOrder
