@@ -1,7 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+
+/*************************************************************************
+
+This randomizer will vary the connector by spawning normal pins versus bent
+pins.
+
+**************************************************************************/
 
 public class ConnectorRandomizer : CustomRandomizer
 {

@@ -1,7 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Perception.Randomization.Parameters;
+
+/*************************************************************************
+
+This randomizer will vary the environmental lighting of the scene. The goal of 
+this randomizer is to prepare the training model for many different lighting situations
+such as darker rooms, colored lighting, or sunsets.
+
+**************************************************************************/
 
 public class DirectionalLightRandomizer : CustomRandomizer
 {
@@ -17,10 +24,12 @@ public class DirectionalLightRandomizer : CustomRandomizer
 
     public override void Randomize ()
     {
+        // randomize rotation of light
         float x = Random.Range(xAxisRotationRange.x, xAxisRotationRange.y);
         float y = Random.Range(yAxisRotationRange.x, yAxisRotationRange.y);
         directionalLight.transform.eulerAngles = new Vector3(x, y, 0f);
 
+        // randomize color if turned on
         if (useRandomColors)
             directionalLight.color = colorRanges.GenerateColor();
     }
@@ -35,6 +44,7 @@ struct ColorRange
 
     public Color GenerateColor ()
     {
+        // HSV is simpler to work with than RGB for these parameters
         float hue = Random.Range(hueRange.x, hueRange.y);
         float saturation = Random.Range(saturationRange.x, saturationRange.y);
         float value = Random.Range(valueRange.x, valueRange.y);

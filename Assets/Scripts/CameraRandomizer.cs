@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*************************************************************************
+
+This randomizer will vary the camera position and rotation each frame. The goal
+of this randomizer is to prepare the training model for many different camera angles.
+
+**************************************************************************/
+
 public class CameraRandomizer : CustomRandomizer
 {
     [SerializeField] Transform target;
@@ -13,7 +20,7 @@ public class CameraRandomizer : CustomRandomizer
     [SerializeField] Vector2 cameraArcRange;
 
     // get random point based on direction and angle
-    Vector3 GetPointOnUnitSphereCap (Quaternion targetDirection, float angle)
+    Vector3 GetVectorOnUnitSphere (Quaternion targetDirection, float angle)
     {
         float angleInRad = Random.Range(0.0f, angle) * Mathf.Deg2Rad;
         Vector2 pointOnCircle = (Random.insideUnitCircle.normalized) * Mathf.Sin(angleInRad);
@@ -37,7 +44,7 @@ public class CameraRandomizer : CustomRandomizer
     {
         float cameraDistance = Random.Range(cameraDistanceRange.x, cameraDistanceRange.y);
         float camArc = Random.Range(cameraArcRange.x, cameraArcRange.y);
-        camTransform.position = target.position + GetPointOnUnitSphereCap(target.rotation, camArc) * cameraDistance;
+        camTransform.position = target.position + GetVectorOnUnitSphere(target.rotation, camArc) * cameraDistance;
 
         camTransform.LookAt(target.position + JiggleVector());
     }
